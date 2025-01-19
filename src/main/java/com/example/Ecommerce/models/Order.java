@@ -20,7 +20,7 @@ import java.util.List;
 public class Order implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @ManyToOne
     private User user;
     @Column(nullable = false)

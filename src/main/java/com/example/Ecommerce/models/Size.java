@@ -15,7 +15,7 @@ import lombok.Setter;
 public class Size implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @Column(unique = true)
     private String name;
 }

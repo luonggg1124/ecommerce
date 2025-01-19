@@ -19,7 +19,7 @@ import java.util.Date;
 public class Voucher implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @Column(nullable = false,unique = true)
     private String code;
     private double value;

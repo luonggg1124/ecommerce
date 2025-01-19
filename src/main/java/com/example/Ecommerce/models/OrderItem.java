@@ -15,7 +15,7 @@ import lombok.Setter;
 public class OrderItem implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @ManyToOne
     private Order order;

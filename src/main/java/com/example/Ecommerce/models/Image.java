@@ -1,6 +1,7 @@
 package com.example.Ecommerce.models;
 
 import com.example.Ecommerce.common.datetime.TimeStamps;
+import com.example.Ecommerce.enums.models.image.Type;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,11 +16,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 @NoArgsConstructor
-public class Image {
+public class Image implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     private String url;
-    private String alt_text;
-
+    private String public_id;
+    private Type type;
 }

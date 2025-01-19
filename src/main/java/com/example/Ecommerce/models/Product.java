@@ -19,7 +19,7 @@ import java.util.List;
 public class Product implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     private String slug;
     @Column(unique = true)
     private String name;

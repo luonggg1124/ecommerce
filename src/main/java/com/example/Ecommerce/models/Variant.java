@@ -19,7 +19,7 @@ import java.util.List;
 public class Variant implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @Column(unique = true)
     private String name;
     @ManyToOne

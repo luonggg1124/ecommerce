@@ -15,7 +15,7 @@ import lombok.Setter;
 public class Cart implements TimeStamps {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @OneToOne
     private Variant variant;
 
