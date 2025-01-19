@@ -1,7 +1,7 @@
 package com.example.Ecommerce.models;
 
 import com.example.Ecommerce.common.datetime.TimeStamps;
-import com.example.Ecommerce.enums.EnumUser;
+import com.example.Ecommerce.enums.models.user.Status;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,10 +19,12 @@ public class User implements TimeStamps {
     private String email;
     private String password;
     private String phone;
-    private EnumUser status;
+    private String address;
+    private Status status;
     private String google_id;
     @OneToOne
     private Image image;
+
 
 
 
